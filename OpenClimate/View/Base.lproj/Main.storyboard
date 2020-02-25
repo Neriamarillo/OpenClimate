@@ -11,7 +11,7 @@
         <!--Weather View Controller-->
         <scene sceneID="URt-iO-cx3">
             <objects>
-                <viewController id="Gr4-UL-wVs" customClass="WeatherViewController" customModule="OpenClima" sceneMemberID="viewController">
+                <viewController id="Gr4-UL-wVs" customClass="WeatherViewController" customModule="OpenClimate" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vDK-k3-nb5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="locationPressed:" destination="Gr4-UL-wVs" eventType="touchUpInside" id="xdY-dJ-EEs"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-Ob-htJ">
                                                 <rect key="frame" x="50" y="0.0" width="274" height="40"/>
@@ -48,6 +51,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="Gr4-UL-wVs" eventType="touchUpInside" id="pzu-kY-959"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -79,8 +85,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRd-NG-Y5Q">
-                                        <rect key="frame" x="322" y="309.5" width="52" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRd-NG-Y5Q">
+                                        <rect key="frame" x="295.5" y="309.5" width="78.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -108,10 +114,10 @@
                         <viewLayoutGuide key="safeArea" id="yyc-AU-1WE"/>
                     </view>
                     <connections>
-                        <outlet property="cityLabel" destination="vRd-NG-Y5Q" id="xFW-Yl-atq"/>
-                        <outlet property="conditionImageView" destination="MCD-ad-zc7" id="TMX-jG-MNW"/>
-                        <outlet property="searchTextField" destination="PA9-Ob-htJ" id="3Yw-tY-aCE"/>
-                        <outlet property="temperatureLabel" destination="KQ5-Ro-kH4" id="f3N-mg-JMC"/>
+                        <outlet property="cityLabel" destination="vRd-NG-Y5Q" id="0eF-Gm-4ph"/>
+                        <outlet property="conditionImageView" destination="MCD-ad-zc7" id="851-DH-FxC"/>
+                        <outlet property="searchTextField" destination="PA9-Ob-htJ" id="lCN-9i-xs1"/>
+                        <outlet property="temperatureLabel" destination="KQ5-Ro-kH4" id="fYo-aS-uia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wja-Ta-LO0" sceneMemberID="firstResponder"/>
